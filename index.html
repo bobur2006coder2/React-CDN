@@ -18,7 +18,7 @@
 
     <script type="text/babel">
         const App = () => {
-            const num =()=>{console.log(true)};
+            const num=10
             const title = "welcome to this web page";
             const pEl = "hello every one what's up ?";
             return (
@@ -26,8 +26,7 @@
                     <h1>{title.toLocaleUpperCase()}</h1>
                     <p>{pEl}</p>
                     <h3>{new Date().toDateString()}</h3>
-                    <h3>You can random this number : {num} </h3>
-                    <button onClick={num}>Random</button>
+                    <h3>You can random this number : {Math.floor(Math.random()*num)} </h3>
                 </div>
 
             )
